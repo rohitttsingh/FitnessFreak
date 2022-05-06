@@ -1,0 +1,305 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#000"
+    android:id="@+id/bglayout"
+    tools:context=".DietActivity">
+
+    <ImageView
+        android:id="@+id/backgroundset"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="-150dp"
+        android:layout_marginTop="-150dp"
+        android:layout_marginRight="-150dp"
+        android:layout_marginBottom="-150dp"
+        android:alpha="0.2" />
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        app:navigationIcon="@drawable/bacharrow"
+        app:title=" " />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/toolbar"
+
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/titleveg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/toolbar"
+                android:textSize="30sp"
+                android:paddingLeft="30dp"
+                android:text="Vegetarian \nDiet plan"
+                android:fontFamily="@font/poppins_bold"
+                android:textColor="@color/white"
+                />
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card1"
+                android:layout_width="match_parent"
+                android:layout_height="560px"
+                app:cardCornerRadius="12dp"
+                android:elevation="8dp"
+                app:cardElevation="8dp"
+                android:layout_margin="10dp"
+                app:cardBackgroundColor="@color/red">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView
+                        android:id="@+id/youtube_player_view"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:videoId="X11X7IX_bZ4"
+                        app:autoPlay="false"
+                        android:transitionName="video"
+                        />
+
+                    <TextView
+                        android:id="@+id/text1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentBottom="true"
+                        android:fontFamily="@font/poppins_bold"
+                        android:gravity="bottom"
+                        android:outlineSpotShadowColor="@color/black"
+                        android:paddingLeft="20dp"
+                        android:paddingBottom="10dp"
+                        android:text=" "
+                        android:textColor="@color/white"
+                        android:textSize="25sp" />
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card2"
+                android:layout_width="match_parent"
+                android:layout_height="560px"
+                app:cardCornerRadius="12dp"
+                android:elevation="8dp"
+                app:cardElevation="8dp"
+                android:layout_margin="10dp"
+                app:cardBackgroundColor="@color/red">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView
+                        android:id="@+id/youtube_player_view2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:videoId="6lFnoCD-RGA"
+                        app:autoPlay="false"
+                        android:transitionName="video"
+                        />
+
+                    <TextView
+                        android:id="@+id/text2"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentBottom="true"
+                        android:fontFamily="@font/poppins_bold"
+                        android:gravity="bottom"
+                        android:outlineSpotShadowColor="@color/black"
+                        android:paddingLeft="20dp"
+                        android:paddingBottom="10dp"
+                        android:text=" "
+                        android:textColor="@color/white"
+                        android:textSize="25sp" />
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card3"
+                android:layout_width="match_parent"
+                android:layout_height="560px"
+                app:cardCornerRadius="12dp"
+                android:elevation="8dp"
+                app:cardElevation="8dp"
+                android:layout_margin="10dp"
+                app:cardBackgroundColor="@color/red">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView
+                        android:id="@+id/youtube_player_view3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:videoId="6as0FgWRMLg"
+                        app:autoPlay="false"
+                        android:transitionName="video"
+                        />
+
+                    <TextView
+                        android:id="@+id/text3"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentBottom="true"
+                        android:fontFamily="@font/poppins_bold"
+                        android:gravity="bottom"
+                        android:outlineSpotShadowColor="@color/black"
+                        android:paddingLeft="20dp"
+                        android:paddingBottom="10dp"
+                        android:text=" "
+                        android:textColor="@color/white"
+                        android:textSize="25sp" />
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:id="@+id/titlenonveg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="30sp"
+                android:layout_marginTop="40dp"
+                android:paddingLeft="30dp"
+                android:text="Non-Vegetarian \nDiet plan"
+                android:fontFamily="@font/poppins_bold"
+                android:textColor="@color/white"
+                />
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card4"
+                android:layout_width="match_parent"
+                android:layout_height="560px"
+                app:cardCornerRadius="12dp"
+                android:elevation="8dp"
+                app:cardElevation="8dp"
+                android:layout_margin="10dp"
+                app:cardBackgroundColor="@color/red">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView
+                        android:id="@+id/youtube_player_view4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:videoId="taIdFwS8RxY"
+                        app:autoPlay="false"
+                        android:transitionName="video"
+                        />
+
+                    <TextView
+                        android:id="@+id/text4"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentBottom="true"
+                        android:fontFamily="@font/poppins_bold"
+                        android:gravity="bottom"
+                        android:outlineSpotShadowColor="@color/black"
+                        android:paddingLeft="20dp"
+                        android:paddingBottom="10dp"
+                        android:text=" "
+                        android:textColor="@color/white"
+                        android:textSize="25sp" />
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card5"
+                android:layout_width="match_parent"
+                android:layout_height="560px"
+                app:cardCornerRadius="12dp"
+                android:elevation="8dp"
+                app:cardElevation="8dp"
+                android:layout_margin="10dp"
+                app:cardBackgroundColor="@color/red">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView
+                        android:id="@+id/youtube_player_view5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:videoId="8nDC336Dgb0"
+                        app:autoPlay="false"
+                        android:transitionName="video"
+                        />
+
+                    <TextView
+                        android:id="@+id/text5"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentBottom="true"
+                        android:fontFamily="@font/poppins_bold"
+                        android:gravity="bottom"
+                        android:outlineSpotShadowColor="@color/black"
+                        android:paddingLeft="20dp"
+                        android:paddingBottom="10dp"
+                        android:text=" "
+                        android:textColor="@color/white"
+                        android:textSize="25sp" />
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card6"
+                android:layout_width="match_parent"
+                android:layout_height="560px"
+                app:cardCornerRadius="12dp"
+                android:elevation="8dp"
+                app:cardElevation="8dp"
+                android:layout_margin="10dp"
+                app:cardBackgroundColor="@color/red">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView
+                        android:id="@+id/youtube_player_view6"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:videoId="qgA-0R5Ssm8"
+                        app:autoPlay="false"
+                        android:transitionName="video"
+                        />
+
+                    <TextView
+                        android:id="@+id/text6"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentBottom="true"
+                        android:fontFamily="@font/poppins_bold"
+                        android:gravity="bottom"
+                        android:outlineSpotShadowColor="@color/black"
+                        android:paddingLeft="20dp"
+                        android:paddingBottom="10dp"
+                        android:text=" "
+                        android:textColor="@color/white"
+                        android:textSize="25sp" />
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="50dp"/>
+        </LinearLayout>
+    </ScrollView>
+
+
+
+</RelativeLayout>

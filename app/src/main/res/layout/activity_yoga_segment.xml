@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    android:orientation="vertical"
+    tools:context=".YogaSegmentActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:navigationIcon="@drawable/bacharrow"
+        app:title="Yoga"
+        app:subtitle="Moderate intensity"
+        app:titleTextColor="@color/white"
+        app:subtitleTextColor="@color/red"/>
+
+<ScrollView
+    android:id="@+id/scroll"
+    android:layout_marginTop="5dp"
+    android:layout_below="@+id/toolbar"
+    android:layout_width="match_parent"
+    android:scrollbars="vertical"
+    android:scrollIndicators="end"
+    android:scrollbarSize="10dp"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card1"
+            android:layout_width="match_parent"
+            android:layout_height="560px"
+            app:cardCornerRadius="12dp"
+            android:elevation="8dp"
+            app:cardElevation="8dp"
+            android:layout_margin="10dp"
+            app:cardBackgroundColor="@color/red">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView
+                    android:id="@+id/youtube_player_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:videoId="sTANio_2E0Q"
+                    app:autoPlay="false"
+                    android:transitionName="video"
+                    />
+
+                <TextView
+                    android:id="@+id/text1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentBottom="true"
+                    android:fontFamily="@font/poppins_bold"
+                    android:gravity="bottom"
+                    android:outlineSpotShadowColor="@color/black"
+                    android:paddingLeft="20dp"
+                    android:paddingBottom="10dp"
+                    android:text="Yoga Asana 1"
+                    android:textColor="@color/white"
+                    android:textSize="25sp" />
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="560px"
+            app:cardCornerRadius="12dp"
+            android:elevation="8dp"
+            app:cardElevation="8dp"
+            android:layout_margin="10dp"
+            app:cardBackgroundColor="@color/red">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView
+                    android:id="@+id/youtube_player_view2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:videoId="4pKly2JojMw"
+                    app:autoPlay="false"
+                    android:transitionName="video"
+
+                    />
+
+                <TextView
+                    android:id="@+id/text2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentEnd="true"
+                    android:fontFamily="@font/poppins_bold"
+                    android:outlineSpotShadowColor="@color/black"
+                    android:paddingLeft="20dp"
+                    android:gravity="bottom"
+                    android:paddingBottom="10dp"
+                    android:text="Yoga Asana 2"
+                    android:textColor="@color/white"
+                    android:textSize="25sp"  />
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="560px"
+            app:cardCornerRadius="12dp"
+            android:elevation="8dp"
+            app:cardElevation="8dp"
+            android:layout_margin="10dp"
+            app:cardBackgroundColor="@color/red">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView
+                    android:id="@+id/youtube_player_view3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:autoPlay="false"
+                    android:transitionName="video"
+
+                    app:videoId="UEEsdXn8oG8" />
+
+                <TextView
+                    android:id="@+id/text3"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentEnd="true"
+                    android:fontFamily="@font/poppins_bold"
+                    android:outlineSpotShadowColor="@color/black"
+                    android:paddingLeft="20dp"
+                    android:gravity="bottom"
+                    android:paddingBottom="10dp"
+                    android:text="Yoga Asana 3"
+                    android:textColor="@color/white"
+                    android:textSize="25sp"  />
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="560px"
+            app:cardCornerRadius="12dp"
+            android:elevation="8dp"
+            app:cardElevation="8dp"
+            android:layout_margin="10dp"
+            app:cardBackgroundColor="@color/red">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView
+                    android:id="@+id/youtube_player_view4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:autoPlay="false"
+                    android:transitionName="video"
+
+                    app:videoId="nQwKKCqkJxg" />
+                <TextView
+                    android:id="@+id/text4"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentEnd="true"
+                    android:fontFamily="@font/poppins_bold"
+                    android:outlineSpotShadowColor="@color/black"
+                    android:paddingLeft="20dp"
+                    android:gravity="bottom"
+                    android:paddingBottom="10dp"
+                    android:text="Yoga Asana 4"
+                    android:textColor="@color/white"
+                    android:textSize="25sp" />
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="560px"
+            app:cardCornerRadius="12dp"
+            android:elevation="8dp"
+            app:cardElevation="8dp"
+            android:layout_margin="10dp"
+            app:cardBackgroundColor="@color/red">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView
+                    android:id="@+id/youtube_player_view5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:videoId="Eml2xnoLpYE"
+                    app:autoPlay="false"
+                    android:transitionName="video"
+
+                    />
+                <TextView
+                    android:id="@+id/text5"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentEnd="true"
+                    android:fontFamily="@font/poppins_bold"
+                    android:outlineSpotShadowColor="@color/black"
+                    android:paddingLeft="20dp"
+                    android:gravity="bottom"
+                    android:paddingBottom="10dp"
+                    android:text="Yoga Asana 5"
+                    android:textColor="@color/white"
+                    android:textSize="25sp" />
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="560px"
+            app:cardCornerRadius="12dp"
+            android:elevation="8dp"
+            app:cardElevation="8dp"
+            android:layout_margin="10dp"
+            app:cardBackgroundColor="@color/red">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView
+                    android:id="@+id/youtube_player_view6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:videoId="EIqsDkpzOgo"
+                    app:autoPlay="false"
+                    android:transitionName="video"
+
+                    />
+                <TextView
+                    android:id="@+id/text6"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentEnd="true"
+                    android:fontFamily="@font/poppins_bold"
+                    android:outlineSpotShadowColor="@color/black"
+                    android:paddingLeft="20dp"
+                    android:gravity="bottom"
+                    android:paddingBottom="10dp"
+                    android:text="Yoga Asana 6"
+                    android:textColor="@color/white"
+                    android:textSize="25sp" />
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+</ScrollView>
+
+ <ImageView
+        android:id="@+id/yogaimg"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_gravity="end"
+     android:layout_below="@id/scroll"
+        android:transitionName="example_transition"
+
+        />
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:src="@drawable/ic_baseline_blur_on_24"
+        android:backgroundTint="@color/red"
+        app:backgroundTintMode="add"
+        android:backgroundTintMode="src_over"
+        android:layout_margin="20dp"/>
+
+</RelativeLayout>

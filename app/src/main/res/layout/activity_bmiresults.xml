@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".BMIResultsActivity">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/image"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="0dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/bmiindex" />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_below="@+id/image"
+        android:orientation="vertical"
+        android:gravity="center_vertical"
+        android:background="@color/black">
+
+        <TextView
+            android:id="@+id/bmiresult"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="35.35"
+            android:textStyle="bold"
+            android:textSize="33dp"
+            android:fontFamily="@font/poppins_bold"
+            android:layout_gravity="center_horizontal"
+            android:textColor="@color/red"
+            />
+        <View
+            android:layout_width="190dp"
+            android:layout_height="1dp"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@color/white"/>
+
+        <TextView
+            android:id="@+id/resulttv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/poppins_bold"
+            android:text=""
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            android:textStyle="normal" />
+
+
+
+    </LinearLayout>
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/button"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/red"
+        android:backgroundTint="@color/red"
+        android:text="Lets Improve Together"
+        android:textColor="@color/white"
+        android:drawableEnd="@drawable/rightarrow"
+        android:fontFamily="@font/poppins_bold"
+        android:paddingRight="20dp"
+        android:layout_below="@+id/ll"/>
+
+</LinearLayout>

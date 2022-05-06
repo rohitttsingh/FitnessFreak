@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".NotificationManagementActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:navigationIcon="@drawable/bacharrow"
+            app:title=" " />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_medium"
+            android:paddingLeft="30dp"
+            android:text="Customize Your \nDaily Notifications Here"
+            android:textColor="@color/white"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:background="@drawable/lblueborder"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_medium"
+                android:text="Daily Water Reminder"
+                android:textColor="@color/white"
+                android:paddingLeft="20dp"
+                android:layout_centerVertical="true"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <com.github.angads25.toggle.widget.LabeledSwitch
+                android:id="@+id/notify1"
+                android:layout_width="80dp"
+                android:layout_height="40dp"
+                android:layout_margin="16dp"
+                app:colorBorder="@color/colorAccent"
+                app:on="false"
+                android:layout_alignParentEnd="true"
+                app:textOff="OFF"
+                app:textOn="ON" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0dp"
+            android:gravity="center"
+            android:background="@drawable/lblueborder"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_medium"
+                android:text="Burn Calories"
+                android:paddingLeft="20dp"
+                android:layout_centerVertical="true"
+                android:textColor="@color/white"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <com.github.angads25.toggle.widget.LabeledSwitch
+                android:id="@+id/notify2"
+                android:layout_width="80dp"
+                android:layout_height="40dp"
+                android:layout_margin="16dp"
+                app:colorBorder="@color/colorAccent"
+                app:on="false"
+                android:layout_alignParentEnd="true"
+                app:textOff="OFF"
+                app:textOn="ON" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0dp"
+            android:gravity="center"
+            android:background="@drawable/lblueborder"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_medium"
+                android:text="Diet Reminder"
+                android:textColor="@color/white"
+                android:textSize="20dp"
+                android:paddingLeft="20dp"
+                android:layout_centerVertical="true"
+                android:textStyle="bold" />
+
+            <com.github.angads25.toggle.widget.LabeledSwitch
+                android:id="@+id/notify3"
+                android:layout_width="80dp"
+                android:layout_height="40dp"
+                android:layout_alignParentEnd="true"
+                android:layout_margin="16dp"
+                app:colorBorder="@color/colorAccent"
+                app:on="false"
+                app:textOff="OFF"
+                app:textOn="ON" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0dp"
+            android:gravity="center"
+            android:background="@drawable/lblueborder"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_medium"
+                android:text="Exercise Chart"
+                android:paddingLeft="20dp"
+                android:layout_centerVertical="true"
+                android:textColor="@color/white"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <com.github.angads25.toggle.widget.LabeledSwitch
+                android:id="@+id/notify4"
+                android:layout_width="80dp"
+                android:layout_height="40dp"
+                android:layout_margin="16dp"
+                app:colorBorder="@color/colorAccent"
+                app:on="false"
+                app:textOff="OFF"
+                android:layout_alignParentEnd="true"
+                app:textOn="ON" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

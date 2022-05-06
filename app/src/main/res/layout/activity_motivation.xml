@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    android:orientation="vertical"
+    tools:context=".MotivationActivity">
+<androidx.appcompat.widget.Toolbar
+    app:title=" "
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:navigationIcon="@drawable/bacharrow"
+    android:id="@+id/toolbar"/>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="0dp"
+        android:id="@+id/imgview"/>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Legend Once Said"
+                android:layout_marginTop="30dp"
+                android:textColor="@color/white"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                android:fontFamily="@font/poppins"
+                android:paddingLeft="20dp"/>
+
+            <com.makeramen.roundedimageview.RoundedImageView
+                android:layout_width="match_parent"
+                android:layout_height="600px"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                app:riv_corner_radius="10dp"
+                android:id="@+id/motiimg1"/>
+
+            <com.makeramen.roundedimageview.RoundedImageView
+                android:layout_width="match_parent"
+                android:layout_height="600px"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                app:riv_corner_radius="10dp"
+                android:id="@+id/motiimg2"/>
+
+            <com.makeramen.roundedimageview.RoundedImageView
+                android:layout_width="match_parent"
+                android:layout_height="600px"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                app:riv_corner_radius="10dp"
+                android:id="@+id/motiimg3"/>
+
+            <com.makeramen.roundedimageview.RoundedImageView
+                android:layout_width="match_parent"
+                android:layout_height="600px"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="10dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                app:riv_corner_radius="10dp"
+                android:id="@+id/motiimg4"/>
+
+            <com.makeramen.roundedimageview.RoundedImageView
+                android:layout_width="match_parent"
+                android:layout_height="600px"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                app:riv_corner_radius="10dp"
+                android:id="@+id/motiimg5"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Motivation Podcast"
+                android:layout_marginTop="30dp"
+                android:textColor="@color/white"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                android:fontFamily="@font/poppins"
+                android:paddingLeft="20dp"/>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="560px"
+                app:cardCornerRadius="12dp"
+                android:elevation="8dp"
+                app:cardElevation="8dp"
+                android:layout_margin="10dp"
+                app:cardBackgroundColor="@color/red">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView
+                        android:id="@+id/youtube_player_view"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:videoId="Z63w5PefxTQ"
+                        app:autoPlay="false"
+                        android:transitionName="video"
+                        />
+
+                    <TextView
+                        android:id="@+id/text1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentBottom="true"
+                        android:fontFamily="@font/poppins_bold"
+                        android:gravity="bottom"
+                        android:outlineSpotShadowColor="@color/black"
+                        android:paddingLeft="20dp"
+                        android:paddingBottom="10dp"
+                        android:text="Motivation 1"
+                        android:textColor="@color/white"
+                        android:textSize="25sp" />
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="560px"
+                app:cardCornerRadius="12dp"
+                android:elevation="8dp"
+                app:cardElevation="8dp"
+                android:layout_margin="10dp"
+                app:cardBackgroundColor="@color/red">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView
+                        android:id="@+id/youtube_player_view2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:videoId="tbnzAVRZ9Xc"
+                        app:autoPlay="false"
+                        android:transitionName="video"
+                        />
+
+                    <TextView
+                        android:id="@+id/text2"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentBottom="true"
+                        android:fontFamily="@font/poppins_bold"
+                        android:gravity="bottom"
+                        android:outlineSpotShadowColor="@color/black"
+                        android:paddingLeft="20dp"
+                        android:paddingBottom="10dp"
+                        android:text="Motivation 2"
+                        android:textColor="@color/white"
+                        android:textSize="25sp" />
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="560px"
+                app:cardCornerRadius="12dp"
+                android:elevation="8dp"
+                app:cardElevation="8dp"
+                android:layout_margin="10dp"
+                app:cardBackgroundColor="@color/red">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView
+                        android:id="@+id/youtube_player_view3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:videoId="hKsNVL5Mag8"
+                        app:autoPlay="false"
+                        android:transitionName="video"
+                        />
+
+                    <TextView
+                        android:id="@+id/text3"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentBottom="true"
+                        android:fontFamily="@font/poppins_bold"
+                        android:gravity="bottom"
+                        android:outlineSpotShadowColor="@color/black"
+                        android:paddingLeft="20dp"
+                        android:paddingBottom="10dp"
+                        android:text="Motivation 3"
+                        android:textColor="@color/white"
+                        android:textSize="25sp" />
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="560px"
+                app:cardCornerRadius="12dp"
+                android:elevation="8dp"
+                app:cardElevation="8dp"
+                android:layout_margin="10dp"
+                app:cardBackgroundColor="@color/red">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView
+                        android:id="@+id/youtube_player_view4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:videoId="loB4aMdlKaI"
+                        app:autoPlay="false"
+                        android:transitionName="video"
+                        />
+
+                    <TextView
+                        android:id="@+id/text4"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentBottom="true"
+                        android:fontFamily="@font/poppins_bold"
+                        android:gravity="bottom"
+                        android:outlineSpotShadowColor="@color/black"
+                        android:paddingLeft="20dp"
+                        android:paddingBottom="10dp"
+                        android:text="Motivation 4"
+                        android:textColor="@color/white"
+                        android:textSize="25sp" />
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
